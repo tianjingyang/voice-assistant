@@ -15,7 +15,7 @@ import queue
 from langchain.callbacks.base import BaseCallbackHandler, BaseCallbackManager
 
 # Configuration
-MODEL_PATH = "models/yi-34b-chat.Q8_0.gguf" # 模型文件路径
+MODEL_PATH = "/Users/aekal/developer/AI/LLM/yi-34b-chat.Q8_0.gguf" # 模型文件路径
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -25,7 +25,7 @@ SILENCE_THRESHOLD = 1000 # 500 worked，注意麦克风不要静音（亮红灯�
 SILENT_CHUNKS = 2 * RATE / CHUNK  # 2 continous seconds of silence
 
 NAME = "林亦"
-MIC_IDX = 1 # 选择麦克风序号，如果报错可能是麦克风选错了。音频设备序号可以通过pyaudio查看
+MIC_IDX = 0 # 选择麦克风序号，如果报错可能是麦克风选错了。音频设备序号可以通过pyaudio查看
 DEBUG = True
 
 def compute_rms(data):
