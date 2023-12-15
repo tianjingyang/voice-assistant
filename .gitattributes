@@ -1,4 +1,0 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-TheBloke/Yi-34B-Chat-GGUF filter=lfs diff=lfs merge=lfs -text
-163011ba9907f85336681293420c12a3c7ab3e531618552be2340bcb298eba1e filter=lfs diff=lfs merge=lfs -text
